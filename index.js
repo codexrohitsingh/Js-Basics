@@ -41,11 +41,21 @@
 // }
 // console.log(user.name.rohit.age)
 function greet(user){
-    return "Hello " + user.name +" and your age is "+user.age;
+let gen = "Mr"
+    if(user.gender =="Male"){
+        gen="Mr"
+    }
+    if(user.gender == "Female"){
+        gen="Ms"
+    }
+    if(user.gender == "Other"){
+        gen="Others"
+    }
+    return "Hello "+gen +" "+ user.name +" and your age is "+user.age;
 }
 let user = {
     name:"Rohit",
     age:21,
-    gender:M,
+    gender:"Male",
 }
 console.log(greet(user))
