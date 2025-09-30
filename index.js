@@ -40,3 +40,12 @@
 //     age:21
 // }
 // console.log(user.name.rohit.age)
+function greet(user){
+    return "Hello " + user.name +" and your age is "+user.age;
+}
+let user = {
+    name:"Rohit",
+    age:21,
+    gender:M,
+}
+console.log(greet(user))
