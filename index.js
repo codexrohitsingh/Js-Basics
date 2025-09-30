@@ -40,26 +40,48 @@
 //     age:21
 // }
 // console.log(user.name.rohit.age)
-function greet(user){
-let gen = "Mr"
-let eligible ="eligible"
-    if(user.gender =="Male"){
-        gen="Mr"
+// function greet(user){
+// let gen = "Mr"
+// let eligible ="eligible"
+//     if(user.gender =="Male"){
+//         gen="Mr"
+//     }
+//     if(user.gender == "Female"){
+//         gen="Ms"
+//     }
+//     if(user.gender == "Other"){
+//         gen="Others"
+//     }
+//     if(user.age <18){
+//         eligible  ="not eligible"
+//     }
+//     return "Hello "+gen +" "+ user.name +" and your age is "+user.age +" and you are "+eligible+" to vote";
+// }
+// let user = {
+//     name:"Rohit",
+//     age:17,
+//     gender:"Male",
+// }
+// console.log(greet(user))
+function checker(user){
+    for(let i = 0; i<user.length;i++){
+        if(user[i].age>18 && user[i].gender=="Male"){
+            console.log(user[i].name+" is eligible to vote")
+        }
+        
     }
-    if(user.gender == "Female"){
-        gen="Ms"
-    }
-    if(user.gender == "Other"){
-        gen="Others"
-    }
-    if(user.age <18){
-        eligible  ="not eligible"
-    }
-    return "Hello "+gen +" "+ user.name +" and your age is "+user.age +" and you are "+eligible+" to vote";
 }
-let user = {
-    name:"Rohit",
-    age:17,
-    gender:"Male",
-}
-console.log(greet(user))
+const user = [
+    {
+        name:"Rohit",
+        age:21,
+        gender:"Male"
+    },
+    {
+        name:"Sourav",
+        age:20,
+        gender:"Female"
+    }
+]
+
+checker(user)
