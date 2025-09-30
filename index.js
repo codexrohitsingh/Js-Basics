@@ -42,6 +42,7 @@
 // console.log(user.name.rohit.age)
 function greet(user){
 let gen = "Mr"
+let eligible ="eligible"
     if(user.gender =="Male"){
         gen="Mr"
     }
@@ -51,11 +52,14 @@ let gen = "Mr"
     if(user.gender == "Other"){
         gen="Others"
     }
-    return "Hello "+gen +" "+ user.name +" and your age is "+user.age;
+    if(user.age <18){
+        eligible  ="not eligible"
+    }
+    return "Hello "+gen +" "+ user.name +" and your age is "+user.age +" and you are "+eligible+" to vote";
 }
 let user = {
     name:"Rohit",
-    age:21,
+    age:17,
     gender:"Male",
 }
 console.log(greet(user))
