@@ -1,0 +1,42 @@
+// let firstName = "Rohit "
+// let secondName = "sourav"
+// console.log(firstName)
+// console.log(secondName)
+
+// const users = ["Rohit","Sourav","asdasd"]
+// console.log(users[3])
+
+// let sum = 10+5; 
+// console.log(sum)
+// let age = 18; 
+// let canVote = (age>18);
+// console.log(canVote)
+
+// function greet(name){
+//     return "Hello "+name;
+// }
+// function sum(a,b){
+//     return a+b;
+// }
+// function canVote(age){
+//     if(age>=18){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// console.log(greet("sourav"))
+// console.log(sum(23,32))
+// console.log(canVote(17))
+
+
+// let user = {
+//     name:{
+//         rohit:{
+//             age:18
+//         }
+//     },
+//     age:21
+// }
+// console.log(user.name.rohit.age)
